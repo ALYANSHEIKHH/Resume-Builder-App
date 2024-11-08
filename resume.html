@@ -395,6 +395,8 @@
                 <button type = "button" class="unique-button" onclick="printCV()">Print CV</button>
                 <button id="downloadBtn" class="unique-button">Download Resume</button>
                 <button id="shareResumeBtn" class="unique-button">Share Resume</button>
+                <button class="theme-btn" id="theme-btn">Switch Themes</button>
+
             </div>
             
 
@@ -443,7 +445,24 @@
             }
             
             </script>
-        
+            <script>
+
+                
+            </script>
+     <script>
+        // Toggle between dark and light themes
+        function toggleTheme() {
+          const currentTheme = document.documentElement.getAttribute("data-theme");
+          if (currentTheme === "dark") {
+            document.documentElement.removeAttribute("data-theme");
+          } else {
+            document.documentElement.setAttribute("data-theme", "dark");
+          }
+        }
+    
+        // Attach event listener to button
+        document.getElementById('theme-btn').addEventListener('click', toggleTheme);
+      </script>
         <!-- <script>
             function downloadCV() {
                 const cvElement = document.querySelector('.print_area');

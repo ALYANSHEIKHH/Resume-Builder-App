@@ -243,22 +243,3 @@ function printCV(){
 
 
 
-// function downloadCV() {
-//     const cvElement = document.querySelector('.print_area');
-//     const opt = {
-//         margin: 0,
-//         filename: 'my-cv.pdf',
-//         image: { type: 'jpeg', quality: 0.98 },
-//         html2canvas: { scale: 2 },
-//         jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
-//     };
-
-//     html2pdf()
-//         .from(cvElement)
-//         .set(opt)
-//         .save();
-// }
-
-
-
-// Add your other functions such as generateCV() here
